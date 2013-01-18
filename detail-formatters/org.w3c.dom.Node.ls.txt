@@ -1,0 +1,9 @@
+org.w3c.dom.ls.DOMImplementationLS domImplementation = null;
+if (this instanceof org.w3c.dom.Document) {
+	domImplementation = (org.w3c.dom.ls.DOMImplementationLS)  this.getImplementation();
+} else {
+	domImplementation = (org.w3c.dom.ls.DOMImplementationLS)  this.getOwnerDocument().getImplementation();
+}
+org.w3c.dom.ls.LSSerializer lsSerializer = domImplementation.createLSSerializer();
+java.lang.String xml = lsSerializer.writeToString(this);
+return xml;

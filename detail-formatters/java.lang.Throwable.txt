@@ -1,0 +1,4 @@
+java.io.StringWriter w = new java.io.StringWriter();
+java.io.PrintWriter pw = new java.io.PrintWriter(w);
+this.printStackTrace(pw);
+return w.toString();

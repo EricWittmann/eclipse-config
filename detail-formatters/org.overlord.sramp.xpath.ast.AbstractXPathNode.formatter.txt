@@ -1,0 +1,3 @@
+org.overlord.sramp.query.xpath.visitors.XPathSerializationVisitor visitor = new org.overlord.sramp.query.xpath.visitors.XPathSerializationVisitor();
+this.accept(visitor);
+return visitor.getXPath();

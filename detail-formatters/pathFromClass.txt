@@ -1,0 +1,1 @@
+cls.getClassLoader().getResource(cls.getName().replace('.', '/') + ".class").getPath();
